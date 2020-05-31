@@ -1,1 +1,5 @@
+# Intoduction 
+
+Sentiment analysis is part of one of the most popular applications of NLP, that focus on analysing sentiments of diverse datasets ranging from corporate surveys to movie reviews. The key aspect of sentiment analysis is to analyse a body of text for understanding the opinion expressed by it. The overall sentiment is often inferred as positive, neutral or negative from the sign of the polarity score. Usually, sentiment analysis works best on text that has a subjective context than on text with only an objective context. Objective text usually depicts some normal statements or facts without expressing any emotion, feelings, or mood. Subjective text contains text that is usually expressed by a human having typical moods, emotions, and feelings. Sentiment analysis is widely used, especially as a part of social media analysis for any domain, be it a business, a recent movie, or a product launch, to understand its reception by the people and what they think of it based on their opinions or, you guessed it, sentiment.
+In this project, we're focus   
 
