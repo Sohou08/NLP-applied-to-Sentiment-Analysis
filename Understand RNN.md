@@ -4,7 +4,7 @@ The idea behind RNNs is to make use of sequential information. In a traditional 
 
 Here is what a typical RNN looks like described too how our recurrent network is designed :
 
-![tes](https://user-images.githubusercontent.com/51121757/83359673-a69b8d00-a373-11ea-848e-5a715ad8441f.png)
+![RRN](https://user-images.githubusercontent.com/51121757/83359635-650ae200-a373-11ea-9a5d-b12381ce04ce.JPG)
 
 
 The neural network cannot work directly on text-strings so we must convert it somehow. There are two pre-processing step required before feed the neural network. The first one is called “tokenizer” which converts words to integer. The second one is an integrated part of the neural network itself called the "embedding-layer”. This one converts each integer-token from the previous step into a vector values. 
