@@ -6,7 +6,6 @@ Here is what a typical RNN looks like described too how our recurrent network is
 
 
 ![Untitled Diagram](https://user-images.githubusercontent.com/51121757/83359559-d9915100-a372-11ea-8656-b5f063d66c43.png)
-
 The neural network cannot work directly on text-strings so we must convert it somehow. There are two pre-processing step required before feed the neural network. The first one is called “tokenizer” which converts words to integer. The second one is an integrated part of the neural network itself called the "embedding-layer”. This one converts each integer-token from the previous step into a vector values. 
 That is necessary because for example in your case the integer-tokens may take on values between 0 and 10000 for a vocabulary of 10000 words. RNN alone cannot work on values in such a wide range. The embedding-layer is trained as a part of the RNN and will learn to map words with similar semantic meanings to similar embedding-vectors
 
@@ -19,5 +18,7 @@ When it sees the third word "not" the RU1 has learned that it may be important f
 The same process is repeated for the second layer and this creates a new output sequence which is then input to the third layer's recurrent unit RU3. 
 
 When the entire sequence has been processed, you obtains an output vector (RU3) of the last layer  which summarizes what it has seen in the input sequence. Then a fully-connected layer with a Sigmoid activation require to be used in order to get a single value between 0 and 1. These values will be interpreted respectively as the sentiment either being negative (values close to 0) or positive (values close to 1).
+
+
 We’re going to set up a small test in a movies data for better comprehension of these concept. 
 
