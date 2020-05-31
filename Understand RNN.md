@@ -4,8 +4,8 @@ The idea behind RNNs is to make use of sequential information. In a traditional 
 
 Here is what a typical RNN looks like described too how our recurrent network is designed :
 
-
 ![RRN](https://user-images.githubusercontent.com/51121757/83359635-650ae200-a373-11ea-9a5d-b12381ce04ce.JPG)
+
 
 The neural network cannot work directly on text-strings so we must convert it somehow. There are two pre-processing step required before feed the neural network. The first one is called “tokenizer” which converts words to integer. The second one is an integrated part of the neural network itself called the "embedding-layer”. This one converts each integer-token from the previous step into a vector values. 
 That is necessary because for example in your case the integer-tokens may take on values between 0 and 10000 for a vocabulary of 10000 words. RNN alone cannot work on values in such a wide range. The embedding-layer is trained as a part of the RNN and will learn to map words with similar semantic meanings to similar embedding-vectors
